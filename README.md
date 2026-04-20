@@ -30,9 +30,9 @@ Claude will ask for SSH targets (or read them from project docs like `infrastruc
 You can also invoke the collector directly:
 
 ```
-mikrotik-audit router-home-main router-home-backup
-mikrotik-audit --out /tmp/audit admin@192.168.0.1
-mikrotik-audit admin@192.168.0.1:2222
+mikrotik-audit router1 router2
+mikrotik-audit --out /tmp/audit admin@192.0.2.1
+mikrotik-audit admin@192.0.2.1:2222
 ```
 
 Output lands in `./audit-results/<timestamp>/` with per-target dumps and a heuristic `summary.md`.
